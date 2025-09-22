@@ -10,10 +10,15 @@
       margin: 0;
       background: #f3f4f6;
       font-family: system-ui, -apple-system, Segoe UI, Roboto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
     .card {
       max-width: 720px;
-      margin: 24px auto;
+      width: 100%;
+      margin: 24px;
       padding: 16px;
       background: #fff;
       border-radius: 18px;
@@ -31,7 +36,7 @@
   <div class="card">
     <model-viewer
       src="jumpingjacks.glb"
-      ios-src="jumping jacks.usdz"
+      ios-src="jumpingjacks.usdz"
       ar
       ar-modes="scene-viewer webxr quick-look"
       ar-placement="manual"
